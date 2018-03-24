@@ -25,4 +25,19 @@ class FirstController extends \yii\web\Controller
     {
         return $this->render('test3');
     }
+    
+    public function actionTest4(
+            $xname = null,
+            $yname = null
+            )
+    {           
+        $fname = $xname;
+        $lname = $yname;
+        $name = $fname." ".$lname;
+        return $this->render('test4',[
+            'name'=>$name, ]);
+    }
+    
+    
+    
 }
