@@ -45,17 +45,13 @@ return [
             ],
         ],
         */
-      'assetManager' => [
-			'bundles' => [
-				'dosamigos\google\maps\MapAsset' => [
-				'options' => [
-					'key' => 'AIzaSyAkPNOtMhHhmLLq0c-hr8LLRoKGHyksjUY',// ใส่ API ตรงนี้ครับ
-					'language' => 'th',
-					'version' => '3.1.18'
-					]
-				]
-			]
-        ]
+         'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => '@frontend/thems/Admin_LTE/view'
+                ],
+            ],
+        ],
     
         ],
     
